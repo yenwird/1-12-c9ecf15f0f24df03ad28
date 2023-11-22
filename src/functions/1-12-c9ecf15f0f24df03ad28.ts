@@ -3,7 +3,7 @@ import * as https from "https";
 import * as df from 'durable-functions';
 import { ActivityHandler, OrchestrationContext, OrchestrationHandler } from 'durable-functions';
 
-const testFinal => {}
+const testFinal => {};
 
 export async function serviceBusQueueTrigger(message: unknown, context: InvocationContext): Promise<void> {
     context.log('Service bus queue function processed message:', message);
